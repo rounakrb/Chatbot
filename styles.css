@@ -1,0 +1,138 @@
+/* Reset some default styles */
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the background color for the entire page */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Quicksand', Josefinn sans, sans-serif; /* Quicksand as the primary font */
+}
+
+/* Style for the chat container */
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Style for the chat header */
+.chat-header {
+    background-color: #007acc;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Style for the categories container */
+.categories-container {
+    background-color: #007acc;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.categories-container h3 {
+    font-family: 'Quicksand', Arial, sans-serif; /* Quicksand for category titles */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style for category links */
+.category-link {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 5px 0;
+    transition: background-color 0.2s;
+    font-family: 'Quicksand', Arial, sans-serif; /* Quicksand for category links */
+}
+
+.category-link:hover {
+    background-color: #005d8e;
+}
+
+/* Style for chat box */
+.chat-box {
+    padding: 20px;
+}
+
+/* Style for chat log */
+.chat-log {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-family: 'Quicksand', Arial, sans-serif; /* Quicksand for chat log text */
+}
+
+/* Style for chat input area */
+.chat-input {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: 'Quicksand', Arial, sans-serif; /* Quicksand for user input */
+}
+
+#send-button {
+    background-color: #007acc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Quicksand', Arial, sans-serif; /* Quicksand for send button text */
+}
+
+/* Style for doctor info */
+.doctor-info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #007acc;
+    color: #ffffff;
+}
+
+.doctor-image {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.doctor-details {
+    flex-grow: 1;
+}
+
+.doctor-details h3 {
+    font-family: 'Quicksand', Arial, sans-serif; /* Quicksand for doctor's name */
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.doctor-details p {
+    font-family: 'Quicksand', Arial, sans-serif; /* Quicksand for doctor's details */
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .chat-container {
+        border-radius: 0;
+    }
+}
